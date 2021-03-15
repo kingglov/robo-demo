@@ -13,26 +13,131 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.overlay {
+  width: 300px;
+  height: 500px;
+  background-color: rgba(212, 211, 211, 0.767);
+  z-index: -1;
+  position: relative;
+  background-size: cover;
+  background-image: url("./Images/background.png");
 }
 
-.App-link {
-  color: #61dafb;
+.originalDiv1 {
+  width: 300px;
+  height: 500px;
+  background-image: url("./Images/Head.png");
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  background-size: cover;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
 }
 
-@keyframes App-logo-spin {
+.originalDiv2 {
+  width: 300px;
+  height: 500px;
+  background-image: url("./Images/upperBody.png");
+  z-index: 3;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+
+.originalDiv3 {
+  width: 300px;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./Images/Leftarm.png");
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+
+.originalDiv4 {
+  width: 300px;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./Images/Rightarm.png");
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+
+.originalDiv5 {
+  width: 300px;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./Images/Lowerbody.png");
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+.originalDiv6 {
+  width: 300px;
+  background-size: cover;
+  height: 500px;
+  background-image: url("./Images/leftleg.png");
+  z-index: 4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+
+.originalDiv7 {
+  width: 300px;
+  height: 500px;
+  background-size: cover;
+  background-image: url("./Images/Rightleg.png");
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: myfirst 3s; /* Chrome, Safari, Opera */
+  animation: myfirst 3s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
   from {
-    transform: rotate(0deg);
+    opacity: 0.2;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wipe {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
   }
 }
